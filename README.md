@@ -31,8 +31,12 @@ python3 -m http.server 8000
 
 ## النشر
 
-يتم النشر تلقائيًا عبر GitHub Actions. لتفعيله لأول مرة:
+النشر يتم تلقائيًا عبر GitHub Actions، لكن يجب تفعيل GitHub Pages مرة واحدة يدويًا لأن إنشاء موقع Pages صلاحية إدارية لا يملكها توكن الـ workflow.
 
-**Settings → Pages → Build and deployment → Source: GitHub Actions**
+1. افتح **Settings → Pages**.
+2. تحت **Build and deployment** اختر **Source: GitHub Actions**.
+3. من تبويب **Actions** أعد تشغيل آخر workflow عبر **Re-run jobs** (أو ادفع أي تعديل جديد).
 
-بعدها سيُنشر الموقع تلقائيًا مع كل دفعة (push) إلى الفرع.
+بعد ذلك يُنشر الموقع تلقائيًا مع كل دفعة (push) إلى الفرع، على الرابط:
+
+<https://lamar51.github.io/nn12b/>
